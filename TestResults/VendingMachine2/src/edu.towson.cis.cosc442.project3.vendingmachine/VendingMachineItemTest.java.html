@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>VendingMachineItemTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">VendingMachine2 (Mar 1, 2018 5:21:43 PM)</a> &gt; <a href="../../index.html" class="el_group">VendingMachine2</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.towson.cis.cosc442.project3.vendingmachine</a> &gt; <span class="el_source">VendingMachineItemTest.java</span></div><h1>VendingMachineItemTest.java</h1><pre class="source lang-java linenums">package edu.towson.cis.cosc442.project3.vendingmachine;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>VendingMachineItemTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">VendingMachine2Test (Mar 1, 2018 5:32:06 PM)</a> &gt; <a href="../../index.html" class="el_group">VendingMachine2</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.towson.cis.cosc442.project3.vendingmachine</a> &gt; <span class="el_source">VendingMachineItemTest.java</span></div><h1>VendingMachineItemTest.java</h1><pre class="source lang-java linenums">package edu.towson.cis.cosc442.project3.vendingmachine;
 
 import org.junit.*;
 import static org.junit.Assert.*;
@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
  * @author kyleharris
  * @version $Revision: 1.0 $
  */
-<span class="fc" id="L13">public class VendingMachineItemTest {</span>
+<span class="nc" id="L13">public class VendingMachineItemTest {</span>
 	/**
 	 * Run the VendingMachineItem(String,double) constructor test.
 	 *
@@ -32,16 +32,16 @@ import static org.junit.Assert.*;
 	@Test
 	public void testVendingMachineItem_1()
 		throws Exception {
-<span class="fc" id="L35">		String name = &quot;&quot;;</span>
-<span class="fc" id="L36">		double price = 1.0;</span>
+<span class="nc" id="L35">		String name = &quot;&quot;;</span>
+<span class="nc" id="L36">		double price = 1.0;</span>
 
-<span class="fc" id="L38">		VendingMachineItem result = new VendingMachineItem(name, price);</span>
+<span class="nc" id="L38">		VendingMachineItem result = new VendingMachineItem(name, price);</span>
 
 		// add additional test code here
-<span class="fc" id="L41">		assertNotNull(result);</span>
-<span class="fc" id="L42">		assertEquals(&quot;&quot;, result.getName());</span>
-<span class="fc" id="L43">		assertEquals(1.0, result.getPrice(), 1.0);</span>
-<span class="fc" id="L44">	}</span>
+<span class="nc" id="L41">		assertNotNull(result);</span>
+<span class="nc" id="L42">		assertEquals(&quot;&quot;, result.getName());</span>
+<span class="nc" id="L43">		assertEquals(1.0, result.getPrice(), 1.0);</span>
+<span class="nc" id="L44">	}</span>
 
 	/**
 	 * Run the VendingMachineItem(String,double) constructor test.
@@ -53,8 +53,8 @@ import static org.junit.Assert.*;
 	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
 	public void testVendingMachineItem_2()
 		throws Exception {
-<span class="fc" id="L56">		String name = &quot;&quot;;</span>
-<span class="fc" id="L57">		double price = -4.9E-324;</span>
+<span class="nc" id="L56">		String name = &quot;&quot;;</span>
+<span class="nc" id="L57">		double price = -4.9E-324;</span>
 
 <span class="nc" id="L59">		VendingMachineItem result = new VendingMachineItem(name, price);</span>
 
@@ -72,13 +72,13 @@ import static org.junit.Assert.*;
 	@Test
 	public void testGetName_1()
 		throws Exception {
-<span class="fc" id="L75">		VendingMachineItem fixture = new VendingMachineItem(&quot;&quot;, 1.0);</span>
+<span class="nc" id="L75">		VendingMachineItem fixture = new VendingMachineItem(&quot;&quot;, 1.0);</span>
 
-<span class="fc" id="L77">		String result = fixture.getName();</span>
+<span class="nc" id="L77">		String result = fixture.getName();</span>
 
 		// add additional test code here
-<span class="fc" id="L80">		assertEquals(&quot;&quot;, result);</span>
-<span class="fc" id="L81">	}</span>
+<span class="nc" id="L80">		assertEquals(&quot;&quot;, result);</span>
+<span class="nc" id="L81">	}</span>
 
 	/**
 	 * Run the double getPrice() method test.
@@ -90,13 +90,13 @@ import static org.junit.Assert.*;
 	@Test
 	public void testGetPrice_1()
 		throws Exception {
-<span class="fc" id="L93">		VendingMachineItem fixture = new VendingMachineItem(&quot;&quot;, 1.0);</span>
+<span class="nc" id="L93">		VendingMachineItem fixture = new VendingMachineItem(&quot;&quot;, 1.0);</span>
 
-<span class="fc" id="L95">		double result = fixture.getPrice();</span>
+<span class="nc" id="L95">		double result = fixture.getPrice();</span>
 
 		// add additional test code here
-<span class="fc" id="L98">		assertEquals(1.0, result, 0.1);</span>
-<span class="fc" id="L99">	}</span>
+<span class="nc" id="L98">		assertEquals(1.0, result, 0.1);</span>
+<span class="nc" id="L99">	}</span>
 
 	/**
 	 * Perform pre-test initialization.
@@ -109,37 +109,37 @@ import static org.junit.Assert.*;
 	@Before
 	public void setUp()
 		throws Exception {
-<span class="fc" id="L112">		 choc = new VendingMachineItem(&quot;Chocolate Bar&quot;, 3.25);</span>
-<span class="fc" id="L113">		 pro = new VendingMachineItem(&quot;Protein Bar&quot;, 4.00);</span>
-<span class="fc" id="L114">		 gat = new VendingMachineItem(&quot;Gatorade&quot;, 2.50);</span>
+<span class="nc" id="L112">		 choc = new VendingMachineItem(&quot;Chocolate Bar&quot;, 3.25);</span>
+<span class="nc" id="L113">		 pro = new VendingMachineItem(&quot;Protein Bar&quot;, 4.00);</span>
+<span class="nc" id="L114">		 gat = new VendingMachineItem(&quot;Gatorade&quot;, 2.50);</span>
 		// add additional set up code here
-<span class="fc" id="L116">	}</span>
+<span class="nc" id="L116">	}</span>
 	
 	@Test 
 	public void testItemConstructor() {
-<span class="fc" id="L120">		VendingMachineItem testCon = new VendingMachineItem(&quot;Skittles&quot;,1.25);</span>
-<span class="fc" id="L121">		assertNotNull(testCon);</span>
-<span class="fc" id="L122">		assertEquals(testCon.getName(), &quot;Skittles&quot;);</span>
-<span class="fc" id="L123">		assertEquals(testCon.getPrice(), 1.25,.001);</span>
+<span class="nc" id="L120">		VendingMachineItem testCon = new VendingMachineItem(&quot;Skittles&quot;,1.25);</span>
+<span class="nc" id="L121">		assertNotNull(testCon);</span>
+<span class="nc" id="L122">		assertEquals(testCon.getName(), &quot;Skittles&quot;);</span>
+<span class="nc" id="L123">		assertEquals(testCon.getPrice(), 1.25,.001);</span>
 		
 		
 		
-<span class="fc" id="L127">	}</span>
+<span class="nc" id="L127">	}</span>
 	/**
 	 * Test get item name.
 	 */
 	@Test
 	public void testGetName() {
-<span class="fc" id="L133">		assertEquals(&quot;Chocolate Bar&quot;,choc.getName());</span>
-<span class="fc" id="L134">	}</span>
+<span class="nc" id="L133">		assertEquals(&quot;Chocolate Bar&quot;,choc.getName());</span>
+<span class="nc" id="L134">	}</span>
 	
 	/**
 	 * Test get item price.
 	 */
 	@Test
 	public void testGetItemPrice() {
-<span class="fc" id="L141">		assertEquals(3.25, choc.getPrice(), .0001);</span>
-<span class="fc" id="L142">	}</span>
+<span class="nc" id="L141">		assertEquals(3.25, choc.getPrice(), .0001);</span>
+<span class="nc" id="L142">	}</span>
 
 
 	/**
@@ -154,7 +154,7 @@ import static org.junit.Assert.*;
 	public void tearDown()
 		throws Exception {
 		// Add additional tear down code here
-<span class="fc" id="L157">	}</span>
+<span class="nc" id="L157">	}</span>
 
 	/**
 	 * Launch the test.
@@ -167,4 +167,4 @@ import static org.junit.Assert.*;
 <span class="nc" id="L167">		new org.junit.runner.JUnitCore().run(VendingMachineItemTest.class);</span>
 <span class="nc" id="L168">	}</span>
 }
-</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>VendingMachine2 (Mar 1, 2018 5:21:43 PM)</div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>VendingMachine2Test (Mar 1, 2018 5:32:06 PM)</div></body></html>
