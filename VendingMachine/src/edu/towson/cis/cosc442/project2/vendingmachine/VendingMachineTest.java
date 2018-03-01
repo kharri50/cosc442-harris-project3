@@ -195,7 +195,6 @@ public class VendingMachineTest {
 				double amount = 3.50;
 				vm.insertMoney(amount);
 				// now we're going to test the balance
-				
 				boolean thrown = false;
 				try {
 					vm.insertMoney(0);

@@ -1,5 +1,9 @@
 package edu.towson.cis.cosc442.project2.vendingmachine;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
 // TODO: Auto-generated Javadoc
 /**
  * Class for items in the vending machine.
@@ -28,12 +32,11 @@ public class VendingMachineItem {
 	 * @throws VendingMachineException Thrown if price is less than zero
 	 */
 	public VendingMachineItem( String name, double price ) throws VendingMachineException {
+		assertNotNull(name);
 		this.name = name;
-		if( price < 0 ) {
-			throw new VendingMachineException(PRICE_LESS_THAN_ZERO_MESSAGE);
-		} else {
-			this.price = price;
-		}
+		// assert that the price is valid
+		//assertTrue(price>=0);
+		this.price = price;
 	}
 	
 	/**

@@ -52,7 +52,7 @@ public class VendingMachineItemTest {
 	@Test 
 	public void testItemConstructor() {
 		VendingMachineItem testCon = new VendingMachineItem("Skittles",1.25);
-		assertTrue(testCon!=null);
+		assertNotNull(testCon);
 		assertEquals(testCon.getName(), "Skittles");
 		assertEquals(testCon.getPrice(), 1.25,.001);
 		
@@ -63,7 +63,7 @@ public class VendingMachineItemTest {
 	 * Test get item name.
 	 */
 	@Test
-	public void testGetItemName() {
+	public void testGetName() {
 		assertEquals("Chocolate Bar",choc.getName());
 	}
 	
