@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 /**
  * The class <code>VendingMachineItemTest</code> contains tests for the class <code>{@link VendingMachineItem}</code>.
  *
- * @generatedBy CodePro at 3/1/18 5:02 PM
+ * @generatedBy CodePro at 3/1/18 5:19 PM
  * @author kyleharris
  * @version $Revision: 1.0 $
  */
@@ -16,19 +16,8 @@ public class VendingMachineItemTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/1/18 5:02 PM
+	 * @generatedBy CodePro at 3/1/18 5:19 PM
 	 */
-	
-	
-	/** The choc. */
-	private VendingMachineItem choc;
-	
-	/** The pro. */
-	private VendingMachineItem pro;
-	
-	/** The gat. */
-	private VendingMachineItem gat; 
-	
 	@Test
 	public void testVendingMachineItem_1()
 		throws Exception {
@@ -48,7 +37,7 @@ public class VendingMachineItemTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/1/18 5:02 PM
+	 * @generatedBy CodePro at 3/1/18 5:19 PM
 	 */
 	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
 	public void testVendingMachineItem_2()
@@ -67,7 +56,7 @@ public class VendingMachineItemTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/1/18 5:02 PM
+	 * @generatedBy CodePro at 3/1/18 5:19 PM
 	 */
 	@Test
 	public void testGetName_1()
@@ -85,7 +74,7 @@ public class VendingMachineItemTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/1/18 5:02 PM
+	 * @generatedBy CodePro at 3/1/18 5:19 PM
 	 */
 	@Test
 	public void testGetPrice_1()
@@ -104,43 +93,13 @@ public class VendingMachineItemTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 3/1/18 5:02 PM
+	 * @generatedBy CodePro at 3/1/18 5:19 PM
 	 */
 	@Before
 	public void setUp()
 		throws Exception {
-		 choc = new VendingMachineItem("Chocolate Bar", 3.25);
-		 pro = new VendingMachineItem("Protein Bar", 4.00);
-		 gat = new VendingMachineItem("Gatorade", 2.50);
 		// add additional set up code here
 	}
-	
-	@Test 
-	public void testItemConstructor() {
-		VendingMachineItem testCon = new VendingMachineItem("Skittles",1.25);
-		assertNotNull(testCon);
-		assertEquals(testCon.getName(), "Skittles");
-		assertEquals(testCon.getPrice(), 1.25,.001);
-		
-		
-		
-	}
-	/**
-	 * Test get item name.
-	 */
-	@Test
-	public void testGetName() {
-		assertEquals("Chocolate Bar",choc.getName());
-	}
-	
-	/**
-	 * Test get item price.
-	 */
-	@Test
-	public void testGetItemPrice() {
-		assertEquals(3.25, choc.getPrice(), .0001);
-	}
-
 
 	/**
 	 * Perform post-test clean-up.
@@ -148,7 +107,7 @@ public class VendingMachineItemTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 3/1/18 5:02 PM
+	 * @generatedBy CodePro at 3/1/18 5:19 PM
 	 */
 	@After
 	public void tearDown()
@@ -161,7 +120,7 @@ public class VendingMachineItemTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 3/1/18 5:02 PM
+	 * @generatedBy CodePro at 3/1/18 5:19 PM
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(VendingMachineItemTest.class);
